@@ -1,0 +1,65 @@
+/* ------------------------- Début Navigation -------------------------  */
+
+nav {
+    display: flex;
+
+}
+
+nav li a {
+    display: flex;
+    justify-content: space-around;
+    /* width: 80%; */
+    margin-left: 70px;
+}
+
+#contact {
+    padding-left: 400px;
+}
+
+#produits {
+    padding-left: 300px;
+}
+
+#research {
+    /* display: flex; */
+    /* padding-left: 350px; */
+}
+
+
+
+/* ------------------------- Fin Navigation -------------------------  */
+
+
+.card {
+    display: inline-block;
+}
+
+.input-group {
+margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+padding: 10px;
+border: solid 1px #999;
+border-radius: 2px;
+width: 100%;
+}
+
+label {
+font-weight: 600;
+}
+
+input[type="reset"] {
+background: transparent;
+border: 0;
+text-decoration: underline;
+cursor: pointer;
+}
+
+input[type="submit"] {
+border: solid 1px #999;
+border-radius: 3px;
+padding: 10px;
+}
