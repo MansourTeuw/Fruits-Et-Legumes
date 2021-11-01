@@ -1,29 +1,97 @@
 /* ------------------------- Début Navigation -------------------------  */
 
-nav {
-    display: flex;
+/* -------------------- Navebar Custome -------------------- */
 
+@font-face {
+    font-family: 'Customized-Charmonman';
+    src: url('../fonts/Charmonman-Bold.ttf');
 }
 
-nav li a {
+header {
+    position: relative;
+}
+
+
+#image-logo {
+    width: 50px;
+    height: 30px;
+    padding-left: 5px;
+    background-image: url('../images/vecteezy_watercolor-fruits-and-vegetables/thanksgiving\ background.svg');
+    opacity: 1;
+}
+
+/* nav {
+    position: sticky;
+    top: 20px;
+} */
+
+.navbar-brand {
+    font-family: 'Customized-Charmonman';
+    font-weight: bolder;
+}
+
+.navbar-custom {
+    background-color: seagreen; 
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+
+
+nav {
     display: flex;
-    justify-content: space-around;
-    /* width: 80%; */
-    margin-left: 70px;
+    
+}
+
+nav a {
+    font-size: larger;
+    font-weight: border;
+}
+
+.navbar-toggle,
+#colorBtnColor {
+    color: white;
+}
+
+.navbar-brand,
+ .nav-item,
+#research {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+} 
+
+
+/* -------------------- Navebar Custome End -------------------- */
+
+
+/* #research {
+    padding-left: 200px;
 }
 
 #contact {
     padding-left: 400px;
-}
+}  */
 
-#produits {
-    padding-left: 300px;
-}
 
-#research {
-    /* display: flex; */
-    /* padding-left: 350px; */
-}
+
+
+
+
+
+
 
 
 
@@ -34,6 +102,19 @@ nav li a {
     display: inline-block;
 }
 
+#titreContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#priseDeContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px dashed lightgreen;
+}
+
 .input-group {
 margin-bottom: 20px;
 }
@@ -41,10 +122,10 @@ margin-bottom: 20px;
 .input-group input,
 .input-group textarea,
 .input-group select {
-padding: 10px;
-border: solid 1px #999;
-border-radius: 2px;
-width: 100%;
+    padding: 10px;
+    border: solid 1px #999;
+    border-radius: 2px;
+    width: 100%;
 }
 
 label {
@@ -52,14 +133,17 @@ font-weight: 600;
 }
 
 input[type="reset"] {
-background: transparent;
-border: 0;
-text-decoration: underline;
-cursor: pointer;
+    background: transparent;
+    border: 0;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 input[type="submit"] {
-border: solid 1px #999;
-border-radius: 3px;
-padding: 10px;
+    background-color: seagreen;
+    color: white;
+    cursor: pointer;
+    border: solid 1px #999;
+    border-radius: 3px;
+    padding: 10px;
 }
